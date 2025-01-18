@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Sobre Finanças</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    
+</head>
+<body>
+
+    <header>
+        <h1>Aprenda sobre Finanças</h1>
+        <nav>
+            <ul>
+                <li><a href="#conceitos"> <button class="animado">Conceitos básicos</button></li>
+                    <li><a href="#simulador"> <button class="animado">Simulador de juros compostos</button></a></li>
+                    <li><a href="#dicas"> <button class="animado">Dicas financeiras</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="conceitos">
+            <h2>Conceitos Básicos de Finanças</h2>
+            <p>Entender os conceitos financeiros básicos é fundamental para uma boa gestão do seu dinheiro. Aqui, explicamos termos importantes como:</p>
+            <ul>
+                <li><strong>Juros Compostos</strong>: Juros calculados sobre o valor inicial e também sobre os juros acumulados.</li>
+                <li><strong>Inflação</strong>: Aumento generalizado dos preços ao longo do tempo, reduzindo o poder de compra.</li>
+                <li><strong>Investimentos</strong>: Colocar seu dinheiro em ativos que geram retorno.</li>
+            </ul>
+            <button class="button-89" role="button"><a href="index2.html" style="text-decoration: none; color: inherit;">Conteúdo</a>
+            </button>
+
+       
+
+
+    </section>
+
+    <section id="simulador">
+        <h2>Simulador de Juros Compostos</h2>
+        <p>Use o simulador abaixo para entender como os juros compostos funcionam. Insira um valor inicial, a taxa de juros e o tempo.</p>
+
+        <form id="simuladorForm">
+            <label for="capital">Valor Inicial (R$): </label>
+            <input type="number" id="capital" required><br><br>
+
+            <label for="Mensal">Valor Mensal (R$): </label>
+            <input type="number" id="mensal" required><br><br>
+
+            <label for="taxa">Taxa de Juros (% ao ano): </label>
+            <input type="number" id="taxa" required><br><br>
+
+            <label for="tempo">Tempo (anos): </label>
+            <input type="number" id="tempo" required><br><br>
+
+            <button class="animado" type="submit">Calcular</button>
+        </form>
+
+        <div id="resultadoContainer" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px; display: none;"></div>
+        <h3>Resultado:</h3>
+        <p id="resultado"></p>
+        <canvas id="graficoRendimentos" width="400" height="200"></canvas>
+    
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas Financeiras</h2>
+        <ul>
+            <li>Comece a investir cedo para aproveitar os benefícios dos juros compostos.</li>
+            <li>Evite dívidas de longo prazo com altas taxas de juros.</li>
+            <li>Tenha um orçamento mensal e sempre controle seus gastos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <ul>
+            <li>Whatsapp: (61)99219-8270</li>
+            <li>Email:vbarbosa.vb77@gmail.com</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aprenda sobre Finanças. Todos os direitos reservados.</p>
+        <h3>Desenvolvido por Victor Barbosa da Silva</h3>
+    </footer>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
+
+
+
+

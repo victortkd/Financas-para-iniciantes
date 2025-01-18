@@ -1,0 +1,190 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #47475f;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(5,106,185,1) 66%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(5,106,185,1) 66%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(5,106,185,1) 66%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    opacity: 0; /*inicialmente invisivel*/
+    transition: opacity 0.5s; /*transição suave*/
+    pointer-events: auto; /*impedir interações quando invisivel*/
+}
+footer:hover {
+    opacity: 1; /*aparecer quando passar o mouse*/
+    pointer-events: auto; /*permitir interações quando visivel*/
+}
+
+.animado {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(2, 65, 114) 66%, rgba(0,212,255,1) 100%);
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Permite definir largura e altura */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.animado:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho do botão */
+}
+
+
+.animado {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1100ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+  }
+  
+  .animado:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #badee4;
+    box-shadow: 4px 5px 17px -4px #057586;
+  }
+  
+  .animado::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8d0303;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .animado:hover::before {
+    width: 250%;
+  }
+  
+
+/*botão de conteudo*/
+
+
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.button-89 {
+    position: absolute; /* ou fixed, dependendo do comportamento desejado */
+    right: 20px; /* distância da borda direita */
+    top: 20px; /* ajuste a posição vertical conforme necessário */
+}
